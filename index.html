@@ -194,6 +194,8 @@
     color: var(--color-text-primary);
   }
   .brand span { font-weight: 400; }
+  .logo-desktop { height: 64px; width: auto; display: block; }
+  .logo-mobile { display: none; }
 
   .nav-pill {
     display: flex;
@@ -800,6 +802,9 @@
     .cta-final { padding: var(--space-6) var(--space-3); border-radius: 0; }
     .cta-final h2 { font-size: 28px; }
 
+    .logo-desktop { display: none; }
+    .logo-mobile { display: block; height: 48px; width: auto; }
+
     .footer-wrap { flex-direction: column; align-items: center; text-align: center; }
     .footer-links { width: 100%; justify-content: center; flex-wrap: wrap; margin-top: var(--space-3); }
     .footer-brand { justify-content: center; }
@@ -829,7 +834,8 @@
 <header class="site-header" role="banner">
   <div class="nav-wrap">
     <a href="#top" class="brand" aria-label="Kaven Ecom — página inicial">
-      <img src="src/Logos/Logo%20Principal.png" alt="Kaven Ecom Logo" style="height: 64px; width: auto;" />
+      <img src="src/Logos/Logo%20Principal.png" alt="Kaven Ecom Logo" class="logo-desktop" />
+      <img src="src/Logos/Logo%20principal%20Header.png" alt="Kaven Ecom Logo" class="logo-mobile" />
     </a>
 
     <div class="nav-pill" role="navigation" aria-label="Navegação principal">
