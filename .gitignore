@@ -8,3 +8,8 @@ __pycache__/
 node_modules
 dist
 .vercel
+
+# Local agent + OS files
+.claude/
+desktop.ini
+*.ini
